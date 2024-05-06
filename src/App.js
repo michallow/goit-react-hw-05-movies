@@ -3,12 +3,12 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 
 import './App.css';
 
-const Layout = lazy(() => import('components/Layout/Layout'));
-const Home = lazy(() => import('../Pages/Home'));
-const Movies = lazy(() => import('../Pages/Movies'));
-const MovieDetails = lazy(() => import('../Pages/MovieDetails/MovieDetails'));
-const Cast = lazy(() => import('components/Cast/Cast'));
-const Reviews = lazy(() => import('components/Reviews'));
+const Layout = lazy(() => import('./components/Layout/Layout'));
+const Home = lazy(() => import('./Pages/Home'));
+const Movies = lazy(() => import('./Pages/Movies'));
+const MovieDetails = lazy(() => import('./Pages/MovieDetails/MovieDetails'));
+const Cast = lazy(() => import('./components/Cast/Cast'));
+const Reviews = lazy(() => import('./components/Reviews'));
 
 const ErrorBoundary = () => {
   return <h3>Wystąpił błąd podczas ładowania komponentu.</h3>;
